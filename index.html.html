@@ -1,0 +1,127 @@
+<!--
+Surendra Nagar Tech - Enhanced Tech News Website
+With YouTube Embeds, RSS feed link, and Twitter/Instagram social links.
+-->
+
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Surendra Nagar Tech — Tech News</title>
+  <meta name="description" content="Surendra Nagar Tech — ताज़ा टेक न्यूज़, स्मार्टफोन, AI, सॉफ़्टवेयर अपडेट और टिप्स।">
+  <link rel="alternate" type="application/rss+xml" title="Surendra Nagar Tech RSS" href="rss.xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#9aa7b2;--text:#e6eef3}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071122 0%, #071a2a 100%);color:var(--text);-webkit-font-smoothing:antialiased}
+    header{padding:18px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.03)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:46px;height:46px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .logo span{font-size:18px}
+    h1.site{margin:0;font-size:18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
+    .container{max-width:980px;margin:28px auto;padding:0 18px}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:20px}
+    .card{background:rgba(255,255,255,0.03);padding:16px;border-radius:10px}
+    .lead{font-size:14px;color:var(--muted);margin-top:6px}
+    .posts{display:grid;grid-template-columns:1fr;gap:12px}
+    .post{display:flex;gap:12px;align-items:flex-start}
+    .thumb{width:120px;height:78px;border-radius:8px;background:#061226;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+    .post h3{margin:0;font-size:16px}
+    .meta{font-size:12px;color:var(--muted);margin-top:6px}
+    footer{margin-top:28px;padding:18px;color:var(--muted);text-align:center}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .tag{background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .social-links a{color:var(--muted);text-decoration:none;margin-right:10px;font-size:14px}
+    iframe{border:none;border-radius:10px;width:100%;height:280px;margin-top:10px}
+    @media(min-width:720px){.hero{grid-template-columns:2fr 1fr}.posts{grid-template-columns:1fr 1fr}.thumb{width:140px;height:86px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo"><span>SN</span></div>
+      <div>
+        <h1 class="site">Surendra Nagar Tech</h1>
+        <div class="lead">ताज़ा टेक न्यूज़ • AI • स्मार्टफ़ोन • ऐप्स</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#latest">Latest</a>
+      <a href="#videos">Videos</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2>आज की मुख्य खबर</h2>
+        <p class="lead">नए AI टूल्स, फोन लॉन्च और टेक टिप्स — रोज़ ताज़ा अपडेट यहाँ देखें।</p>
+        <article class="post" style="margin-top:12px">
+          <div class="thumb">IMG</div>
+          <div>
+            <h3>AI टूल X ने फोटो से वीडियो बनाया — क्या यह वैसा ही है जैसा कहा जा रहा है?</h3>
+            <div class="meta">November 3, 2025 • 2 min read</div>
+            <p class="lead">यह नया टूल फोटो को जीवंत वीडियो में बदल सकता है — देखें इसका डेमो वीडियो नीचे।</p>
+          </div>
+        </article>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sample YouTube Video"></iframe>
+      </div>
+
+      <aside class="card">
+        <h3>Trending</h3>
+        <div class="tags">
+          <div class="tag">AI</div>
+          <div class="tag">Smartphones</div>
+          <div class="tag">Apps</div>
+          <div class="tag">Gadgets</div>
+        </div>
+        <div class="social-links" style="margin-top:12px;">
+          <a href="https://twitter.com/SurendraTech" target="_blank">🐦 Twitter</a>
+          <a href="https://instagram.com/SurendraTech" target="_blank">📸 Instagram</a>
+          <a href="rss.xml" target="_blank">📰 RSS</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="latest" class="posts">
+      <article class="card post">
+        <div class="thumb">IMG</div>
+        <div>
+          <h3>नया फोन Z लॉन्च — फीचर्स और कीमत</h3>
+          <div class="meta">Nov 2, 2025 • Mobile</div>
+          <p class="lead">फोन में दमदार कैमरा और लंबी बैटरी लाइफ है। कीमत और उपलब्धता की जानकारी आगे दी गयी है।</p>
+        </div>
+      </article>
+
+      <article class="card post">
+        <div class="thumb">IMG</div>
+        <div>
+          <h3>AI चैटबॉट ने नया अपग्रेड लिया — क्या बदल गया?</h3>
+          <div class="meta">Nov 1, 2025 • AI</div>
+          <p class="lead">नया वर्शन तेज़ और छोटा है; privacy के नए विकल्प जोड़े गए हैं।</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="videos" class="card" style="margin-top:18px">
+      <h3>🎥 Featured YouTube Videos</h3>
+      <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="Latest Tech Video"></iframe>
+      <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="Tech Review Video"></iframe>
+    </section>
+
+    <section id="about" class="card" style="margin-top:18px">
+      <h3>About — Surendra Nagar Tech</h3>
+      <p class="lead">यह साइट Surendra Nagar के लिए बनाई गयी है — ताज़ा और भरोसेमंद टेक-समाचार साझा करने के लिये। अब इसमें YouTube वीडियो, RSS लिंक और सोशल मीडिया कनेक्शन जोड़े गए हैं ताकि यूज़र्स को पूरी डिजिटल उपस्थिति मिले।</p>
+    </section>
+
+    <footer>
+      © Surendra Nagar Tech • Built with zero investment • Updated: November 3, 2025
+    </footer>
+  </main>
+</body>
+</html>
